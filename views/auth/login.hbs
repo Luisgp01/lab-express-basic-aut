@@ -1,0 +1,14 @@
+<div class="login">
+  <form action="/login" method="POST">
+
+    <label for="">Email</label>
+    <input name="email" type="text" id="" />
+
+    <label for="">Password</label>
+    <input name="password" type="password" id="" />
+    <button type="submit">Create Account</button>
+  </form>
+  {{#if errorMessage}}
+    <p>Erhm, excuse me -> {{errorMessage}}</p>
+  {{/if}}
+</div>
